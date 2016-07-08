@@ -29,7 +29,7 @@
   - dimension_group: fin
     label: 'Month-year'
     type: time
-    timeframes: [date, week, month]
+    timeframes: [date, week, month, month_name]
     convert_tz: false
     sql: ${TABLE}.FinDate
 
