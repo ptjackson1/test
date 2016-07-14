@@ -18,7 +18,7 @@
     type: number
     sql: ${TABLE}.AgeCurrent
 
-  - measure: client_name
+  - dimension: client_name
     type: string
     sql: ${TABLE}.ClientName
 
