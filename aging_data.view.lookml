@@ -36,3 +36,8 @@
     type: sum
     sql: Age90Plus + "Age61-90" +  AgeCurrent + "Age31-60"
     
+  - measure: total_over_30_days
+    type: sum
+    sql: Age90Plus + "Age61-90" +  "Age31-60"
+    
+    
