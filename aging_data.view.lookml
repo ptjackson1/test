@@ -6,16 +6,16 @@
     type: sum
     sql: ${TABLE}."Age31-60"
 
-  - dimension: age6190
-    type: number
+  - measure: 61_to_90
+    type: sum
     sql: ${TABLE}."Age61-90"
 
-  - dimension: age90_plus
-    type: number
+  - measure: 90_plus
+    type: sum 
     sql: ${TABLE}.Age90Plus
 
-  - dimension: age_current
-    type: number
+  - measure: age_current
+    type: sum
     sql: ${TABLE}.AgeCurrent
 
   - dimension: client_name
@@ -32,3 +32,7 @@
     type: count
     drill_fields: [client_name]
 
+  - measure: total_owed 
+    type: sum
+    sql: 90_plus + 61_to_90 +  age_current" + 31_to_60
+    
