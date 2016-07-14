@@ -2,6 +2,10 @@
   sql_table_name: dbo.AgingData
   fields:
 
+  - measure: 1_to_30
+    type: sum
+    sql: ${TABLE}."Age1-30"
+
   - measure: 31_to_60
     type: sum
     sql: ${TABLE}."Age31-60"
@@ -34,7 +38,7 @@
 
   - measure: total_owed 
     type: sum
-    sql: Age90Plus + "Age61-90" +  AgeCurrent + "Age31-60"
+    sql: Age90Plus + "Age61-90" +  AgeCurrent + "Age31-60" + "Age1-30"
     
   - measure: total_over_30_days
     type: sum
