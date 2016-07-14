@@ -2,19 +2,19 @@
   sql_table_name: dbo.AgingData
   fields:
 
-  - measure: age3160
+  - dimension: age3160
     type: number
     sql: ${TABLE}."Age31-60"
 
-  - measure: age6190
+  - dimension: age6190
     type: number
     sql: ${TABLE}."Age61-90"
 
-  - measure: age90_plus
+  - dimension: age90_plus
     type: number
     sql: ${TABLE}.Age90Plus
 
-  - measure: age_current
+  - dimension: age_current
     type: number
     sql: ${TABLE}.AgeCurrent
 
