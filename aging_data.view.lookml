@@ -43,4 +43,4 @@
     
   - measure: percent_of_total_over30
     type: percent_of_total
-    sql: ${total_over_30_days}
+    sql: Age90Plus + "Age61-90" +  "Age31-60"
