@@ -12,7 +12,7 @@
 
   - measure: 90_plus
     type: sum 
-    sql: ${TABLE}.
+    sql: ${TABLE}.Age90Plus
 
   - measure: age_current
     type: sum
