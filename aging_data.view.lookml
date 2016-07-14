@@ -3,7 +3,7 @@
   fields:
 
   - measure: 31_to_60
-    type: number
+    type: sum
     sql: ${TABLE}."Age31-60"
 
   - dimension: age6190
