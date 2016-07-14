@@ -12,7 +12,7 @@
 
   - measure: 90_plus
     type: sum 
-    sql: ${TABLE}.Age90Plus
+    sql: ${TABLE}.
 
   - measure: age_current
     type: sum
@@ -34,5 +34,5 @@
 
   - measure: total_owed 
     type: sum
-    sql: 90_plus + 61_to_90 +  age_current" + 31_to_60
+    sql: Age90Plus + "Age61-90" +  AgeCurrent + "Age31-60"
     
