@@ -2,7 +2,7 @@
   sql_table_name: dbo.AgingData
   fields:
 
-  - dimension: age3160
+  - measure: 31_to_60
     type: number
     sql: ${TABLE}."Age31-60"
 
