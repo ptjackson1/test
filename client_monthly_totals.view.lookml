@@ -17,7 +17,19 @@
   - dimension: acctg_category
     type: string
     sql: LTRIM(${TABLE}.AcctgCategory)
-
+    
+  - dimension: MajorCategory
+    type: string
+    sql: ${TABLE}.MajorCategory
+  
+  - dimension: Client_Industry_Minor
+    type: string
+    sql: ${TABLE}.MinorCategory
+    
+  - dimension: CommodityOrService
+    type: string
+    sql: ${TABLE}.CommodityOrService
+    
   - dimension: amount
     type: number
     sql: ${TABLE}.Amount
