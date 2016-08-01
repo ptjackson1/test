@@ -30,7 +30,7 @@
     type: time
     timeframes: [month,year]
     convert_tz: false
-    sql: ${TABLE}.CreateDate
+    sql: ${TABLE}.asofdate
 
   - measure: count
     type: count
