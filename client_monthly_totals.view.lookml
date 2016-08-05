@@ -75,18 +75,7 @@
   - dimension: is_before_ytd
     type: yesno
     sql: |
-      (DATEPART(DAY, FinDate) < DATEPART(DAY, CURRENT_TIMESTAMP)
-        OR
-        (
-          DATEPART(dayofyear ,FinDate) = DATEPART(DAY, CURRENT_TIMESTAMP)
-        OR
-        (
-          DATEPART(dayofyear ,FinDate) = DATEPART(DAY, CURRENT_TIMESTAMP) AND
-          
-      )
-        )
-      
-      
+      MONTH(FinDate) <= MONTH(GETDATE()) - 2
       
   - dimension: client_comparitor
     sql: |
