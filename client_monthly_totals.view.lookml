@@ -72,6 +72,22 @@
     type: string
     sql: ${TABLE}.lineofbusiness
     
+  - dimension: is_before_ytd
+    type: yesno
+    sql: |
+      (DATEPART(DAY, FinDate) < DATEPART(DAY, CURRENT_TIMESTAMP)
+        OR
+        (
+          DATEPART(dayofyear ,FinDate) = DATEPART(DAY, CURRENT_TIMESTAMP)
+        OR
+        (
+          DATEPART(dayofyear ,FinDate) = DATEPART(DAY, CURRENT_TIMESTAMP) AND
+          
+      )
+        )
+      
+      
+      
   - dimension: client_comparitor
     sql: |
       CASE
