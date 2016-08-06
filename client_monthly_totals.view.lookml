@@ -41,7 +41,7 @@
   - dimension_group: fin
     label: 'Month-year'
     type: time
-    timeframes: [year, month, month_name]
+    timeframes: [year, month, month_name, quarter_of_year,quarter]
     convert_tz: false
     sql: ${TABLE}.FinDate
 
