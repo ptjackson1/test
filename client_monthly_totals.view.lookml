@@ -112,7 +112,7 @@
     
   - measure: Gross_Margin
     type: number
-    sql: 100* (${total_income}-${total_expense})/NULLIF(${total_income},0)
+    sql: 100.000* ((${total_income}-${total_expense}))/NULLIF(${total_income},0)
     drill_fields: [id, client_name]
     #sql: |
      # CASE 
