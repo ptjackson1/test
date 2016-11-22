@@ -126,7 +126,7 @@ view: client_monthly_totals {
     type: number
     sql: ${total_income}-${total_expense} ;;
     value_format_name: usd
-    drill_fields: [client_name, amount, line_of_business]
+    drill_fields: [client_name, amount, fin_month, line_of_business]
   }
 
   measure: Gross_Margin {
