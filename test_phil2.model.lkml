@@ -1,4 +1,4 @@
-connection: "qa-quest"
+connection: "pro_questcorp"
 
 # include all the views
 include: "*.view"
