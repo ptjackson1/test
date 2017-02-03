@@ -105,28 +105,28 @@ view: client_monthly_totals {
   measure: count {
     type: count_distinct
     sql: ClientName ;;
-    drill_fields: [id, client_name]
+    drill_fields: [id, client_name, acctg_category,amount,fin_month]
   }
 
   measure: total_income {
     type: sum
     sql: ${income_amount} ;;
     value_format_name: usd
-    drill_fields: [id, client_name]
+    drill_fields: [id, client_name, acctg_category,amount,fin_month]
   }
 
   measure: total_expense {
     type: sum
     sql: ${expense_amount} ;;
     value_format_name: usd
-    drill_fields: [id, client_name]
+    drill_fields: [id, client_name, acctg_category,amount,fin_month]
   }
 
   measure: Gross_Profit {
     type: number
     sql: ${total_income}-${total_expense} ;;
     value_format_name: usd
-    drill_fields: [client_name, amount, fin_month, line_of_business]
+    drill_fields: [id, client_name, acctg_category,amount,fin_month]
   }
 
   measure: Gross_Margin {
