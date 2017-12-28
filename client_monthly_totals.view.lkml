@@ -87,7 +87,7 @@ view: client_monthly_totals {
 
   dimension: is_before_ytd {
     type: yesno
-    sql: MONTH(FinDate) <=  Month(DATEADD(MONTH,-2,GETDATE()))
+    sql: MONTH(FinDate) <=  Month(DATEADD(MONTH,-1,GETDATE()))
       ;;
   }
 
